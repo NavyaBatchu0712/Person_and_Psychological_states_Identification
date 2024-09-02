@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">P2P</string>
+    <string name="face_identify">Face Identifier</string>
+    <string name="emotion_recognize">Depression Detector</string>
+    <string name="patient_details">Register</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+</resources>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            app:titleTextColor="@color/white"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="right"
+                android:src="@drawable/emblem1" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/wel22"
+        android:layout_marginTop="85dp"
+        android:layout_below="@id/image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="serif"
+        android:textColor="@color/black"
+        android:text="P&amp;P"
+        android:textSize="23sp"
+        android:gravity="center"
+        android:background="@drawable/logo"
+        tools:ignore="NotSibling"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/wel"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/wel22"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:textColor="@color/white"
+        android:text="PERSON"
+        android:textSize="23sp"
+        android:gravity="center"
+        tools:ignore="NotSibling"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/wel11"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/wel"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:textColor="@color/white"
+        android:text="&amp;"
+        android:gravity="center"
+        android:textSize="23sp"
+        tools:ignore="NotSibling"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/welcome1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/wel11"
+        android:fontFamily="serif"
+        android:text="PSYCHOLOGICAL STATES"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_below="@id/welcome1"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="IDENTIFICATION"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        >
+
+
+        <Button
+            android:id="@+id/btnUpload"
+            android:layout_width="225dp"
+            android:layout_marginTop="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/roundedbutton"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/patient_details"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/btnIdentify"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/roundedbutton"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/face_identify"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnDepression"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/roundedbutton"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/emotion_recognize"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/student"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="Developers : \nAnu R - 17206. \nNavya B - 17317. \nVinith M - 17335"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/mentor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="Mentor : \nDr. Senthil Kumar T. \n"
+        android:layout_marginRight="10dp"
+        android:gravity="right"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        />
+
+
+</RelativeLayout>

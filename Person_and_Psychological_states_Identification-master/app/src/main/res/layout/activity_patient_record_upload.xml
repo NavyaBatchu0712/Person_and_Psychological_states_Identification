@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".patient_record_upload"
+    android:background="@color/black">
+
+    <ScrollView
+        android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="REGISTER"
+                android:fontFamily="serif"
+                android:textSize="23sp"
+                tools:ignore="NotSibling"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                />
+            <TextView
+                android:id="@+id/desc"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="You can save your details by registering"
+                android:textColor="@android:color/white"
+                android:fontFamily="serif"
+                android:textSize="14dp"
+                tools:ignore="NotSibling"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:layout_marginTop="25dp"
+                android:hint="Name"
+                android:gravity="left"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/textView"
+                android:fontFamily="sans-serif-light"
+                android:textColorHint="@color/white"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"/>
+
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="25dp"
+                android:textColorHint="@color/white"
+                android:hint="Emergency Contact Number"
+                android:gravity="left"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/name"
+                android:fontFamily="sans-serif-light"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/medical_history"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:inputType="text"
+                android:layout_marginTop="25dp"
+                android:hint="Allergies(if any)"
+                android:textColorHint="@color/white"
+                android:gravity="left"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/phone"
+                android:fontFamily="sans-serif-light"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/presription_taken"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:layout_marginTop="25dp"
+                android:hint="Tablets currently taking(if any)"
+                android:textColorHint="@color/white"
+                android:gravity="left"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/medical_history"
+                android:fontFamily="sans-serif-light"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"/>
+            <EditText
+                android:id="@+id/additional_info"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:layout_marginTop="25dp"
+                android:hint="Additional Info"
+                android:textColorHint="@color/white"
+                android:gravity="left"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/presription_taken"
+                android:fontFamily="sans-serif-light"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_weight="1"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_below="@+id/additional_info"
+                android:text="Upload Image"
+                android:fontFamily="sans-serif-light"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:id="@+id/linear"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/textView1"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text=" Gallery "
+                    android:background="@drawable/roundedbutton"
+                    android:id="@+id/button1"
+                    android:fontFamily="sans-serif-light"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text=" Take a pic "
+                    android:background="@drawable/roundedbutton"
+                    android:id="@+id/button2"
+                    android:fontFamily="sans-serif-light"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageview_pic"
+                android:layout_weight="1"
+                android:layout_width="280dp"
+                android:layout_height="360dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:background="@drawable/ic_baseline_image_24"
+                android:layout_below="@+id/linear"
+                />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageview_pic"
+                android:gravity="center"
+                android:text="after choosing patient image, fill details below"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/black"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/upload"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/roundedbutton"
+                android:text="Save Record"
+                android:fontFamily="sans-serif-light"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
+
